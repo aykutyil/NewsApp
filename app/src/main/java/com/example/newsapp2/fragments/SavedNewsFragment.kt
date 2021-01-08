@@ -53,7 +53,7 @@ class SavedNewsFragment : Fragment(R.layout.fragment_saved_news) {
         }
 
         ItemTouchHelper(itemTouchHelperCallback).apply {
-            attachToRecyclerView(rvintendedNews)
+            attachToRecyclerView(rvSavedNews)
         }
 
 
@@ -76,7 +76,7 @@ class SavedNewsFragment : Fragment(R.layout.fragment_saved_news) {
 
     private fun setupAdapter(){
         newsAdapter = NewsAdapter()
-        rvintendedNews.apply {
+        rvSavedNews.apply {
             adapter = newsAdapter
             layoutManager = LinearLayoutManager(activity)
         }
